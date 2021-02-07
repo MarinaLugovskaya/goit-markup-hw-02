@@ -1,0 +1,275 @@
+/* Стили для index.html */
+:root {
+--primary-text-color: #212121;
+--title-text-color: #757575;
+--accent-color: #2196F3;
+--primary-white-color: #ffffff;
+--body-bg-color: #E5E5E5;
+--primary-bg-color: #2F303A;
+--secondary-bg-color: #F5F4FA;
+}
+
+.page-header .page {
+background-color: var(--primary-white-color);
+}
+
+.body .page {
+background-color: var(--body-bg-color);
+color: var(--title-text-color);
+font-family: 'Roboto', sans-serif;
+}
+
+.section .section-title {
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42,19px;
+}
+
+.list {
+    list-style: none;
+
+}
+[hidden] {
+    display: none;
+}
+
+.logo {
+color: var(--primary-text-color);
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 26px;
+line-height: 30,52px;
+}
+
+.logo > span {
+color: var(--accent-color);
+font-family: 'Oleo Script', cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 26px;
+line-height: 35,96px;
+}
+
+/* Site-nav */
+
+.site-nav .link {
+color: var(--primary-text-color);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+color: var(--accent-color);
+}
+
+.site-nav .link.current {
+color: var(--accent-color);
+}
+
+/* Contact */
+
+.contact .link {
+color: var(--title-text-color);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+.contact .link:hover,
+.contact .link:focus {
+color: var(--accent-color);
+}
+
+.contact .link.current {
+    color: var(--accent-color); 
+ }
+
+/* Hero */
+
+.hero {
+ background-color: var(--primary-bg-color);
+
+}
+.hero-title {
+color: var(--primary-white-color);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+}
+
+/* Button */
+
+.button {
+color: var(--primary-white-color);
+background-color: var(--accent-color);
+border-color: transparent;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 30px;
+}
+
+/* Section */
+/* Feature */
+
+.feature-list .title {
+color: var(--primary-text-color);
+border-color: transparent;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16,41px;
+}
+
+.feature-list .text {
+color: var(--title-text-color);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+
+/* Team */
+
+.section-team {
+    background-color: var(--secondary-bg-color);
+}
+
+/* image list */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.team-list .title {
+color: var(--primary-text-color);
+border-color: transparent;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18,75px;
+}
+
+.team-list .text {
+color: var(--title-text-color);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18,75px;   
+}
+
+/* Footer */
+
+.footer {
+background-color: var(--primary-text-color);
+}
+
+.logo-text{
+color: var(--primary-white-color);
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 26px;
+line-height: 30,52px;
+}
+    
+.logo-text > span {
+color: var(--accent-color);
+font-family: 'Oleo Script', cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 26px;
+line-height: 35,96px;
+}
+
+.footer .text {
+color: var(--primary-white-color);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+
+.contacts-phone, .contacts-mail {
+color: rgba(255, 255, 255, 0.6);
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px; 
+}
+.contact-phone, .contacts-mail:hover,
+.contact, .contacts-mail:focus {
+color: var(--accent-color);
+}
+
+/* Portfolio.html */
+/* Button */
+
+.section {
+background-color: var(--primary-white-color);
+}
+
+.button-list .nav-btn {
+    color: var(--primary-white-color);
+    background-color: var(--secondary-bg-color);
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+background-color: var(--accent-color);
+color: var(--primary-white-color);
+}
+
+.button .nav-btn.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Projects */
+
+.project-list .title {
+    color: var(--primary-text-color);
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    }
+
+    .project-list .text {
+    color: var(--title-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    }
+    
