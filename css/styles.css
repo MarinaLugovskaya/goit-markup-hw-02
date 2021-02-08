@@ -7,6 +7,7 @@
 --body-bg-color: #E5E5E5;
 --primary-bg-color: #2F303A;
 --secondary-bg-color: #F5F4FA;
+--logo-color: #000000;
 }
 
 .page-header .page {
@@ -32,26 +33,28 @@ font-family: 'Roboto', sans-serif;
     list-style: none;
 
 }
-[hidden] {
-    display: none;
-}
+
 
 .logo {
-color: var(--primary-text-color);
+color: var(--logo-color);
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-style: normal;
 font-size: 26px;
-line-height: 30,52px;
+line-height: 31px;
+letter-spacing: 3%;
+text-decoration: none;
+
 }
 
 .logo > span {
 color: var(--accent-color);
-font-family: 'Oleo Script', cursive;
-font-weight: 400;
+font-family: Raleway;
 font-style: normal;
+font-weight: bold;
 font-size: 26px;
-line-height: 35,96px;
+line-height: 31px;
+letter-spacing: 3%;
 }
 
 /* Site-nav */
@@ -63,6 +66,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
+text-decoration: none;
 }
 
 .site-nav .link:hover, 
@@ -83,6 +87,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
+text-decoration: none;
 }
 
 .contact .link:hover,
@@ -111,7 +116,20 @@ line-height: 60px;
 
 /* Button */
 
-.button {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.hero .button {
 color: var(--primary-white-color);
 background-color: var(--accent-color);
 border-color: transparent;
@@ -120,6 +138,12 @@ font-style: normal;
 font-weight: 700;
 font-size: 12px;
 line-height: 30px;
+}
+
+.button:hover, 
+.button:focus {
+background-color: var(--accent-color);
+color: var(--primary-white-color);
 }
 
 /* Section */
@@ -190,6 +214,7 @@ font-weight: 700;
 font-style: normal;
 font-size: 26px;
 line-height: 30,52px;
+text-decoration: none;
 }
     
 .logo-text > span {
@@ -208,6 +233,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 24px;
+text-decoration: none;
 }
 
 .contacts-phone, .contacts-mail {
@@ -230,7 +256,7 @@ color: var(--accent-color);
 background-color: var(--primary-white-color);
 }
 
-.button-list .nav-btn {
+.button-projecr-list .nav-btn {
     color: var(--primary-white-color);
     background-color: var(--secondary-bg-color);
     border-color: transparent;
@@ -247,9 +273,9 @@ background-color: var(--accent-color);
 color: var(--primary-white-color);
 }
 
-.button .nav-btn.current {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+.button-project .nav-btn.current {
+color: var(--primary-white-color);
+background-color: var(--accent-color);
 }
 
 /* Projects */
@@ -262,6 +288,7 @@ color: var(--primary-white-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
+    letter-spacing: 6%;
     }
 
     .project-list .text {
@@ -271,5 +298,6 @@ color: var(--primary-white-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    letter-spacing: 3%;
     }
     
